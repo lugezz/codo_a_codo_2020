@@ -1,0 +1,1 @@
+/* Version=6.6.14,Timestamp=2020-12-24T09:28:36.549Z */define("tags",[],function(){"use strict";return IEA.module("UI.tags",function(t,e,i){_.extend(t,{initialize:function(t){this._super(t)},render:function(){this.$el.html(this.template(this.getModelJSON())),!1===this._isEnabled&&(this.enable(),this._isEnabled=!0)},enable:function(){}})})});
