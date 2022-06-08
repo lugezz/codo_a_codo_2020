@@ -1,0 +1,27 @@
+div.a {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+
+div.b {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  animation-name: examplez;
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+@keyframes examplez {
+  from {width: 100px;}
+  to {width: 1000px;}
+}
