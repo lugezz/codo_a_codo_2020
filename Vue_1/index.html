@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando Vue</title>
+
+
+</head>
+
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <p>{{ prueba3 }}</p>
+        <p>{{ fecha }}</p>
+        <p><input v-model="message"></p>
+
+        <h1 v-if="ok">Si</h1>
+        <h1 v-else>No</h1>
+
+        <ul>
+            <li v-for="x in todos">
+              {{ x.text }}
+            </li>
+        </ul>
+
+        <button v-on:click = "counter +=1">Agregar 1</button>
+        <p>Se ha hecho un clic y el contador quedó en {{ counter }} </p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
