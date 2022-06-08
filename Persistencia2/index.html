@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistencia</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h2>Gatos</h2>
+        <div v-for="(cat, n) in cats">
+          <p>
+            <span class="cat">{{ cat }}</span>
+            <button @click="removeCat(n)">Eliminar</button>
+          </p>
+        </div>
+       
+        <p>
+          <input v-model="newCat">
+          <button @click="addCat">Agregar gato</button>
+        </p>
+       </div>
+       
+
+
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>
